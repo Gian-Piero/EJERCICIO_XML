@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:src="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:id="@+id/fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="LUN 20"
+                    android:textAlignment="center"
+                    android:textSize="15dp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/dia"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDia"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="06-12 H"
+                        android:textAlignment="center"></TextView>
+
+                    <ImageView
+                        android:id="@+id/estadoCieloDia"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"></ImageView>
+
+                    <TextView
+                        android:id="@+id/temperaturaDia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="2ºC"
+                        android:textAlignment="center"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tarde"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txTarde"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="06-12 H"
+                        android:textAlignment="center"></TextView>
+
+                    <ImageView
+                        android:id="@+id/estadoCieloTarde"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"></ImageView>
+
+                    <TextView
+                        android:id="@+id/temperaturaTarde"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="2ºC"
+                        android:textAlignment="center"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/noche"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNoche"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="06-12 H"
+                        android:textAlignment="center"></TextView>
+
+                    <ImageView
+                        android:id="@+id/estadoNoche"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"></ImageView>
+
+                    <TextView
+                        android:id="@+id/temperaturaNoche"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="2ºC"
+                        android:textAlignment="center"></TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
